@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-06">
 
 <title>Sea surface temperature in the Northeast Pacific – Pacific SST Monitoring Site</title>
 <style>
@@ -20,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -100,6 +121,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -113,12 +139,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#experimental-maps-and-data-of-current-conditions" id="toc-experimental-maps-and-data-of-current-conditions" class="nav-link active" data-scroll-target="#experimental-maps-and-data-of-current-conditions">Experimental maps and data of current conditions</a></li>
-  <li><a href="#oisst" id="toc-oisst" class="nav-link" data-scroll-target="#oisst">OISST</a>
+  <li><a href="#northeast-pacific-sst-and-sst-anomaly" id="toc-northeast-pacific-sst-and-sst-anomaly" class="nav-link active" data-scroll-target="#northeast-pacific-sst-and-sst-anomaly">Northeast Pacific SST and SST anomaly</a>
   <ul class="collapse">
   <li><a href="#latest-week-of-data" id="toc-latest-week-of-data" class="nav-link" data-scroll-target="#latest-week-of-data">Latest week of data</a></li>
   </ul></li>
-  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing!</a></li>
+  <li><a href="#marine-heatwave-conditions-in-the-northeast-pacific-and-bc-exclusive-economic-zone" id="toc-marine-heatwave-conditions-in-the-northeast-pacific-and-bc-exclusive-economic-zone" class="nav-link" data-scroll-target="#marine-heatwave-conditions-in-the-northeast-pacific-and-bc-exclusive-economic-zone">Marine heatwave conditions in the Northeast Pacific and BC Exclusive Economic Zone</a></li>
+  <li><a href="#how-does-2025-sst-in-the-northeast-pacific-compare-to-other-years" id="toc-how-does-2025-sst-in-the-northeast-pacific-compare-to-other-years" class="nav-link" data-scroll-target="#how-does-2025-sst-in-the-northeast-pacific-compare-to-other-years">How does 2025 SST in the Northeast Pacific compare to other years?</a>
+  <ul class="collapse">
+  <li><a href="#rankings-of-10-warmest-years" id="toc-rankings-of-10-warmest-years" class="nav-link" data-scroll-target="#rankings-of-10-warmest-years">Rankings of 10 warmest years</a></li>
+  <li><a href="#mean-monthly-sst" id="toc-mean-monthly-sst" class="nav-link" data-scroll-target="#mean-monthly-sst">Mean monthly SST:</a></li>
+  <li><a href="#mean-monthly-sst-anomaly" id="toc-mean-monthly-sst-anomaly" class="nav-link" data-scroll-target="#mean-monthly-sst-anomaly">Mean monthly SST Anomaly:</a></li>
+  </ul></li>
+  <li><a href="#eccc-buoy-data" id="toc-eccc-buoy-data" class="nav-link" data-scroll-target="#eccc-buoy-data">ECCC Buoy data</a></li>
+  <li><a href="#other-data-sources-and-links-of-interest" id="toc-other-data-sources-and-links-of-interest" class="nav-link" data-scroll-target="#other-data-sources-and-links-of-interest">Other data sources and links of interest</a>
+  <ul class="collapse">
+  <li><a href="#el-niño" id="toc-el-niño" class="nav-link" data-scroll-target="#el-niño">El Niño</a></li>
+  <li><a href="#hydrology-drought-and-climate" id="toc-hydrology-drought-and-climate" class="nav-link" data-scroll-target="#hydrology-drought-and-climate">Hydrology, drought and climate</a></li>
+  <li><a href="#sst-and-marine-heatwaves" id="toc-sst-and-marine-heatwaves" class="nav-link" data-scroll-target="#sst-and-marine-heatwaves">SST and Marine Heatwaves</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -135,6 +174,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 6, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -144,9 +189,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="experimental-maps-and-data-of-current-conditions" class="level2">
-<h2 class="anchored" data-anchor-id="experimental-maps-and-data-of-current-conditions">Experimental maps and data of current conditions</h2>
-<p>This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found <a href="https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf">here</a>. The OISST and buoy data can also now be found in the <a href="https://github.com/pbs-assess/pacea"><code>pacea</code> R package</a>.</p>
+<p>This page updates weekly with maps and figures from a number of different data sources, for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of the province of British Columbia (BC). A summary of the methods and further details can be found in <span class="citation" data-cites="Hilborn2025">Hilborn et al. (<a href="#ref-Hilborn2025" role="doc-biblioref">2025</a>)</span>. The OISST and buoy data can also now be found in the <a href="https://github.com/pbs-assess/pacea"><code>pacea</code> R package</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -160,9 +203,8 @@ Note
 <p><strong>These figures are provisional and correctness is not guaranteed</strong>. These figures update weekly on Mondays using the most recent week of data. The climatologies for satellite and buoy data are calculated from the <a href="https://climate.weather.gc.ca/climate_normals/">Canadian Climate Normals</a> period of <strong>1991–2020</strong>.</p>
 </div>
 </div>
-</section>
-<section id="oisst" class="level2">
-<h2 class="anchored" data-anchor-id="oisst">OISST</h2>
+<section id="northeast-pacific-sst-and-sst-anomaly" class="level2">
+<h2 class="anchored" data-anchor-id="northeast-pacific-sst-and-sst-anomaly">Northeast Pacific SST and SST anomaly</h2>
 <ul>
 <li><strong>Dataset:</strong> <a href="https://www.ncei.noaa.gov/products/optimum-interpolation-sst">NOAA Optimal Interpolation gap-filled SST (OISST)</a></li>
 <li><strong>Data access:</strong> Coastwatch ERDDAP <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph">Near-realtime</a> and <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph">Science-quality</a> records</li>
@@ -170,37 +212,310 @@ Note
 <li><strong>Climatology period:</strong> 1991–2020</li>
 </ul>
 <p><em>5-degree intervals are marked as lines on the SST plot (left). On the anomaly plots (right) the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology). The BC EEZ is indicated with a dashed line. Points indicate selected stations along <a href="https://www.dfo-mpo.gc.ca/science/data-donnees/line-p/index-eng.html">Line-P</a>.</em></p>
-<p>:arrow_right: To view map insets near Haida Gwaii click <a href="https://github.com/BIO-RSG/Pacific_SST_NRT_Monitoring/tree/main/docs/Haida_Gwaii.md">here</a>. :arrow_left:</p>
 <section id="latest-week-of-data" class="level3">
 <h3 class="anchored" data-anchor-id="latest-week-of-data">Latest week of data</h3>
-<!-- <img src="./figures/current/SST_OI_7-day_rollingavg.png" width="400"/> <img src="./figures/current/SST_OI_7-day_rollingavg_anom.png" width="405"/> -->
+<!-- <img src="./figures/SST_OI_7-day_rollingavg.png" width="400"/> <img src="./figures/SST_OI_7-day_rollingavg_anom.png" width="405"/> -->
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../Pacific_SST_NRT_Monitoring/figures/current/SST_OI_7-day_rollingavg.png" class="img-fluid"></p>
+<p><img src="./figures/SST_OI_7-day_rollingavg.png" class="img-fluid"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="../Pacific_SST_NRT_Monitoring/figures/current/SST_OI_7-day_rollingavg_anom.png" class="img-fluid"></p>
+<p><img src="./figures/SST_OI_7-day_rollingavg_anom.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
 </section>
 </section>
-<div class="column" style="width:35%;">
-<section id="testing" class="level1">
-<h1>Testing!</h1>
-<div class="quarto-figure quarto-figure-center">
+<section id="marine-heatwave-conditions-in-the-northeast-pacific-and-bc-exclusive-economic-zone" class="level2">
+<h2 class="anchored" data-anchor-id="marine-heatwave-conditions-in-the-northeast-pacific-and-bc-exclusive-economic-zone">Marine heatwave conditions in the Northeast Pacific and BC Exclusive Economic Zone</h2>
+<p>The 2025 MHW spatial coverage of the NEP and BC EEZ (red) is below, with 2024 coverage shown in grey. The current percent area of the BC EEZ in MHW status at the surface is written in the upper left corner. The same information is shown below for the NEP (black), and three sub-regions of the BC EEZ: the Offshore Pacific Bioregion (OP, light blue), Northern Shelf Bioregion (NSB, dark blue) and Southern Shelf Bioregion (SSB, yellow). Download the data from this figure <a href="https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2024-2025.csv">here</a>, and view similar plots for previous years <a href="https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/docs/MHW_Conditions.md">here</a>.</p>
+<section id="section" class="level6">
+<h6 class="anchored" data-anchor-id="section"></h6>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here to view region map
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The Northeast Pacific (NEP) region boundary is shown in the maps above: 30-65 N and 120-160 W.</p>
+<div class="quarto-figure quarto-figure-centre">
 <figure class="figure">
-<p><img src="images/Wright_Passage_and_Gil_Island_(386749484).jpg" class="img-fluid figure-img"></p>
-<figcaption>Image of Wright Passage and Gil Island, from <a href="https://commons.wikimedia.org/wiki/File:Wright_Passage_and_Gil_Island_(386749484).jpg">Wikipedia</a> by “Shawn from Airdrie”, license <a href="https://creativecommons.org/licenses/by/2.0">CC BY SA 2.0</a>.</figcaption>
+<p><img src="./figures/BC_MHW_OIRegions.png" class="img-fluid quarto-figure quarto-figure-centre figure-img" width="300"></p>
 </figure>
 </div>
-</section>
 </div>
+</div>
+</div>
+<p><img src="./figures/MHW_EEZ_perc_coverage_2025_regions.png" width="750"></p>
+</section>
+</section>
+<section id="how-does-2025-sst-in-the-northeast-pacific-compare-to-other-years" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-2025-sst-in-the-northeast-pacific-compare-to-other-years">How does 2025 SST in the Northeast Pacific compare to other years?</h2>
+<p><img src="./figures/NEP_progress.png" width="700"></p>
+<section id="rankings-of-10-warmest-years" class="level3">
+<h3 class="anchored" data-anchor-id="rankings-of-10-warmest-years">Rankings of 10 warmest years</h3>
+</section>
+<section id="mean-monthly-sst" class="level3">
+<h3 class="anchored" data-anchor-id="mean-monthly-sst">Mean monthly SST:</h3>
+<p><em>The point indicates the mean of the SST by month, with the bars indicating the monthly standard deviation bounds. The years are indicated on the left, with warmest indicated with a rank of “1.”</em></p>
+<p><img src="./figures/Ranked_SST_months.png" width="750"></p>
+</section>
+<section id="mean-monthly-sst-anomaly" class="level3">
+<h3 class="anchored" data-anchor-id="mean-monthly-sst-anomaly">Mean monthly SST Anomaly:</h3>
+<p><em>The point indicates the mean SST <strong>anomaly</strong> by month, with the bars indicating the monthly mean anomaly standard deviation bounds. The years are indicated on the left, with highest mean anomaly indicated with a rank of “1.”</em></p>
+<p><img src="./figures/Ranked_SST_Anom_months.png" width="750"></p>
+</section>
+</section>
+<section id="eccc-buoy-data" class="level2">
+<h2 class="anchored" data-anchor-id="eccc-buoy-data">ECCC Buoy data</h2>
+<ul>
+<li><strong>Dataset:</strong> Surface temperature observations from Canadian Pacific buoys maintained by <a href="https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information/observations/buoy.html">Environment and Climate Change Canada (ECCC)</a> and <a href="https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html">Fisheries and Oceans Canada (DFO)</a></li>
+<li><strong>Data access:</strong> CIOOS Pacific ERDDAP <a href="https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html">DFO_MEDS_BUOYS</a> and <a href="https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html">ECCC_MSC_BUOYS</a> records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in <a href="https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736">Kellogg et al., 2021</a> which <strong>ends in December, 2023</strong></li>
+<li><strong>Climatology period:</strong> 1991–2020</li>
+</ul>
+<p>The white lines outlined in black are daily mean observations from 2025. The buoy climatological mean (grey line) is plotted with 10th and 90th percentiles (grey shading). The climatology spans 1991–2020, though some buoys began collecting data later: <code>C46146 Halibut Bank</code>, <code>C46131 Sentry Shoal</code>, <code>C46147 South Moresby</code> and <code>C46132 South Brooks</code>.</p>
+<p>There are no climatologies for <code>C46303 South Georgia Strait</code> and <code>C46304 Entrance English Bay</code> as they were installed in 2019. <strong>C46147 South Moresby and C46183 North Hecate Strait are currently offline.</strong></p>
+<p align="center">
+</p><p><img src="./figures/Daily_mean_SSTP_2026_C46184.png" width="43%"> &nbsp; &nbsp; &nbsp; &nbsp; <img src="./figures/Daily_mean_SSTP_2026_C46205.png" width="43%"></p>
+<p></p>
+<p align="center">
+</p><p><img src="./figures/Daily_mean_SSTP_2026_C46145.png" width="43%"> &nbsp; &nbsp; &nbsp; &nbsp; <img src="./figures/Daily_mean_SSTP_2026_C46181.png" width="43%"></p>
+<p></p>
+<p align="center">
+</p><p><img src="./figures/Daily_mean_SSTP_2026_C46185.png" width="43%"> &nbsp; &nbsp; &nbsp; &nbsp; <img src="./figures/Daily_mean_SSTP_2026_C46204.png" width="43%"></p>
+<p></p>
+<p align="center">
+</p><p><img src="./figures/Daily_mean_SSTP_2026_C46208.png" width="43%"> &nbsp; &nbsp; &nbsp; &nbsp; <img src="./figures/Daily_mean_SSTP_2026_C46207.png" width="43%"></p>
+<p></p>
+<p align="center">
+</p><p><img src="./figures/Daily_mean_SSTP_2026_C46004.png" width="43%"> &nbsp; &nbsp; &nbsp; &nbsp; <img src="./figures/Daily_mean_SSTP_2026_C46036.png" width="43%"></p>
+<p></p>
+<p align="center">
+</p><p><img src="./figures/Daily_mean_SSTP_2026_C46132.png" width="43%"> &nbsp; &nbsp; &nbsp; &nbsp; <img src="./figures/Daily_mean_SSTP_2026_C46206.png" width="43%"></p>
+<p></p>
+<p align="center">
+</p><p><img src="./figures/Daily_mean_SSTP_2026_C46131.png" width="43%"> &nbsp; &nbsp; &nbsp; &nbsp; <img src="./figures/Daily_mean_SSTP_2026_C46146.png" width="43%"></p>
+<p></p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here to view buoy map and 1991-2020 surface temperature climatologies
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="./figures/Daily_clim_buoy_overview_2024.png" width="900"></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Click here to view buoy details
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The start dates listed here may not correspond with other sources (e.g.&nbsp;the <a href="https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html">ECCC website</a>) but represent the data record available at the sources listed above, as of December 2023.</p>
+<p>An up-to-date buoy status report can be viewed here: <a href="https://collaboration.cmc.ec.gc.ca/cmc/wbs/bplatstat.html" class="uri">https://collaboration.cmc.ec.gc.ca/cmc/wbs/bplatstat.html</a></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Stn ID</th>
+<th>Start Date</th>
+<th>Longitude</th>
+<th>Latitude</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46004">C46004 Middle NOMAD</a></td>
+<td>1988-08-04</td>
+<td>-136.10</td>
+<td>50.93</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46036">C46036 South NOMAD</a></td>
+<td>1987-09-22</td>
+<td>-133.94</td>
+<td>48.35</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46131">C46131 Sentry Shoal</a></td>
+<td>1992-10-20</td>
+<td>-124.99</td>
+<td>49.91</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46132">C46132 South Brooks</a></td>
+<td>1994-05-05</td>
+<td>-127.93</td>
+<td>49.74</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46145">C46145 Central Dixon Entrance</a></td>
+<td>1991-04-16</td>
+<td>-132.42</td>
+<td>54.38</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46146">C46146 Halibut Bank</a></td>
+<td>1992-03-13</td>
+<td>-123.73</td>
+<td>49.34</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46147">C46147 South Moresby</a></td>
+<td>1993-06-17</td>
+<td>-131.23</td>
+<td>51.83</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46181">C46181 Nanakwa Shoal</a></td>
+<td>1988-11-22</td>
+<td>-128.84</td>
+<td>53.82</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46183">C46183 North Hecate Strait</a></td>
+<td>1991-05-15</td>
+<td>-131.14</td>
+<td>53.57</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46184">C46184 North NOMAD</a></td>
+<td>1987-09-20</td>
+<td>-138.85</td>
+<td>53.92</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46185">C46185 South Hecate Strait</a></td>
+<td>1991-09-12</td>
+<td>-129.79</td>
+<td>52.42</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46204">C46204 West Sea Otter</a></td>
+<td>1989-09-07</td>
+<td>-128.77</td>
+<td>51.38</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46205">C46205 West Dixon Entrance</a></td>
+<td>1988-11-22</td>
+<td>-134.32</td>
+<td>54.19</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46206">C46206 La Perouse Bank</a></td>
+<td>1988-11-22</td>
+<td>-126.00</td>
+<td>48.83</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46207">C46207 East Dellwood</a></td>
+<td>1989-10-18</td>
+<td>-129.91</td>
+<td>50.88</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46208">C46208 West Moresby</a></td>
+<td>1990-07-12</td>
+<td>-132.69</td>
+<td>52.51</td>
+</tr>
+<tr class="odd">
+<td>C46303 South Georgia Strait*</td>
+<td>2019-10-01</td>
+<td>-123.4300</td>
+<td>49.02500</td>
+</tr>
+<tr class="even">
+<td>C46304 Entrance English Bay*</td>
+<td>2019-10-01</td>
+<td>-123.3570</td>
+<td>49.30167</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>Note that these buoys do not have MEDS webpages with data</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="other-data-sources-and-links-of-interest" class="level2">
+<h2 class="anchored" data-anchor-id="other-data-sources-and-links-of-interest">Other data sources and links of interest</h2>
+<section id="el-niño" class="level3">
+<h3 class="anchored" data-anchor-id="el-niño">El Niño</h3>
+<ul>
+<li><a href="https://psl.noaa.gov/enso/dashboard.html">NOAA El Niño Index Dashboard</a></li>
+<li><a href="https://www.climate.gov/news-features/blogs/enso">NOAA ENSO Blog</a></li>
+</ul>
+</section>
+<section id="hydrology-drought-and-climate" class="level3">
+<h3 class="anchored" data-anchor-id="hydrology-drought-and-climate">Hydrology, drought and climate</h3>
+<ul>
+<li><a href="http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html">BC River Forecast Centre Map of 7-Day Average Streamflow</a></li>
+<li><a href="https://droughtportal.gov.bc.ca/">BC Drought Information Portal</a></li>
+<li><a href="https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/river-forecast-centre/snow-survey-water-supply-bulletin/snow-conditions-commentary">BC Snow Conditions Summary</a></li>
+</ul>
+</section>
+<section id="sst-and-marine-heatwaves" class="level3">
+<h3 class="anchored" data-anchor-id="sst-and-marine-heatwaves">SST and Marine Heatwaves</h3>
+<ul>
+<li><p><a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker">California Current Marine Heatwave Tracker</a></p></li>
+<li><p><a href="https://cioospacific.ca/applied-data/marine-heat-monitor/">CIOOS Pacific Marine Heatwave Monitor</a></p></li>
+<li><p><a href="https://climatereanalyzer.org/clim/sst_daily/">Climate Reanalyzer Daily Global Sea Surface Temperature</a></p></li>
+<li><p><a href="https://climate.copernicus.eu/climate-indicators">Copernicus Climate Indicators</a></p></li>
+<li><p><a href="https://pulse.climate.copernicus.eu/">Copernicus Climate Pulse</a></p></li>
+<li><p><a href="https://www.ospo.noaa.gov/Products/ocean/cb/sst5km/">Global daily SST, 7-day trend and anomaly (NOAA CoralReefWatch)</a></p></li>
+<li><p><a href="http://www.marineheatwaves.org/">Marine Heatwaves International Working Group</a></p></li>
+<li><p><a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff">Multi-Scale Ultra-High resolution SST Anomaly, Daily</a> *<strong>click to view latest image</strong> <img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.png?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" alt="Multi-Scale Ultra-High Resolution SST Anomaly, Daily"></p></li>
+<li><p><a href="https://psl.noaa.gov/marine-heatwaves/#report">NOAA Marine Heatwave Forecast Monthly Report</a></p></li>
+<li><p><a href="https://coastwatch.noaa.gov/cw_html/cwViewer.html">NOAA CoastWatch Data Viewer</a> and <a href="https://coastwatch.pfeg.noaa.gov/data.html">CoastWatch commonly used SST data sources</a></p></li>
+<li><p><a href="https://coralreefwatch.noaa.gov/product/marine_heatwave/">NOAA Coral Reef Watch: MHW Watch</a></p></li>
+<li><p><a href="https://psl.noaa.gov/map/clim/sst.shtml">NOAA Physical Sciences Lab Map Room: SST</a></p></li>
+<li><p><a href="https://www.pacioos.hawaii.edu/voyager/">Pacific Islands Ocean Observing System</a>: Near-Real Time data viewer including Coral Reef Watch SST and SST anomaly</p></li>
+</ul>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ul>
+<li>California Current Marine Heatwave Tracker: https://oceanview.pfeg.noaa.gov/projects/mhw/latest</li>
+<li>CoastWatch ERDDAP Server: https://coastwatch.pfeg.noaa.gov/erddap/index.html</li>
+<li>CIOOS Pacific ERDDAP Server: https://data.cioospacific.ca/erddap/index.html</li>
+<li>Galbraith, P.S., Larouche, P. &amp; Caverhill, C. (2021): A Sea-Surface Temperature Homogenization Blend for the Northwest Atlantic, Canadian Journal of Remote Sensing, <a href="https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645">doi:10.1080/07038992.2021.1924645</a></li>
+<li>Hilborn, A., Guan, L., Wan, D. &amp; Peña, A. (2025): A Sea Surface Temperature product for monitoring Marine Heatwaves in the Northeast Pacific. Can. Tech. Rep.&nbsp;Hydrogr. Ocean Sci. 394: v + 23 p.&nbsp;<a href="https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf" class="uri">https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf</a></li>
+<li>Hobday, A.J., Alexander, L., Perkins, S., Smale, D.A., Straub, S., Oliver, E., Benthuysen, J.A., Burrows, M., Donat, M.G., Feng, M., Holbrook, N.J., Moore, P.J., Scannell, H., Sen Gupta, A. &amp; Wernberg, T. (2016): A hierarchical approach to defining marine heatwaves. Progress in Oceanography. 141, 227-238, <a href="https://doi.org/10.1016/j.pocean.2015.12.014">doi:10.1016/j.pocean.2015.12.014</a></li>
+<li>Hobday, A.J., Oliver, E.C.J., Sen Gupta, A., Benthuysen, J.A., Burrows, M.T., Donat, M.G., Holbrook, N.J., Moore, P.J., Thomsen, M.S., Wernberg, T., &amp; Smale, D.A. (2018): Categorizing and naming marine heatwaves. Oceanography 31(2):162–173, <a href="https://doi.org/10.5670/oceanog.2018.205">doi:10.5670/oceanog.2018.205</a></li>
+<li>Kellogg, J., Rosenstock, N., Page, S., Hourston, R., Devred, E. and Hannah, C. (2021): Quality Control of Weather/Wave Buoy Temperature Data Provided by Environment and Climate Change Canada. CIOOS Pacific. <a href="https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736/resource/12786acf-a634-4a5b-9867-2b39c6c11aae">https://catalogue.cioospacific.ca/dataset/ca-cioos_b9c71eb2-b750-43d5-a50a-aee173916736</a></li>
+</ul>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Hilborn2025" class="csl-entry" role="listitem">
+Hilborn, A., L. Guan, D. Wan, and A. Peña. 2025. <span>“A Sea Surface Temperature Product for Monitoring Marine Heatwaves in the Northeast Pacific.”</span> <em>Can. Tech. Rep. Hydrogr. Ocean Sci.</em> 394: v + 23 p. <a href="https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf">https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41282437.pdf</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -287,6 +602,11 @@ Note
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
