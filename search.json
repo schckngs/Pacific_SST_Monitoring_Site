@@ -1,16 +1,30 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sea surface temperature in the Northeast Pacific",
+    "section": "",
+    "text": "This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found here. The OISST and buoy data can also now be found in the pacea R package.\n\n\n\n\n\n\nNote\n\n\n\nThese figures are provisional and correctness is not guaranteed. These figures update weekly on Mondays using the most recent week of data. The climatologies for satellite and buoy data are calculated from the Canadian Climate Normals period of 1991–2020."
+  },
+  {
+    "objectID": "index.html#experimental-maps-and-data-of-current-conditions",
+    "href": "index.html#experimental-maps-and-data-of-current-conditions",
+    "title": "Sea surface temperature in the Northeast Pacific",
+    "section": "",
+    "text": "This page updates weekly with maps and figures from a number of different data sources for monitoring Sea Surface Temperatures (SSTs) and Marine Heatwaves (MHWs) in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of British Columbia (BC). A summary of the methods and further details can be found here. The OISST and buoy data can also now be found in the pacea R package.\n\n\n\n\n\n\nNote\n\n\n\nThese figures are provisional and correctness is not guaranteed. These figures update weekly on Mondays using the most recent week of data. The climatologies for satellite and buoy data are calculated from the Canadian Climate Normals period of 1991–2020."
+  },
+  {
+    "objectID": "index.html#oisst",
+    "href": "index.html#oisst",
+    "title": "Sea surface temperature in the Northeast Pacific",
+    "section": "OISST",
+    "text": "OISST\n\nDataset: NOAA Optimal Interpolation gap-filled SST (OISST)\nData access: Coastwatch ERDDAP Near-realtime and Science-quality records\nSpatial resolution: 0.25° (~25 km)\nClimatology period: 1991–2020\n\n5-degree intervals are marked as lines on the SST plot (left). On the anomaly plots (right) the lines indicate 1.29 and 2.33 standard deviations above normal (approximately the upper 90th and 99th percentiles relative to the climatology). The BC EEZ is indicated with a dashed line. Points indicate selected stations along Line-P.\n:arrow_right: To view map insets near Haida Gwaii click here. :arrow_left:\n\nLatest week of data"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Pacific_SST_Monitoring_Site",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   }
 ]
