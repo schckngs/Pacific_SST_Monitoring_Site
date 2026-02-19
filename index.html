@@ -712,7 +712,7 @@ Schlegel, Robert W., Sofia Darmaraki, Jessica A. Benthuysen, Karen Filbee-Dexter
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("Pacific_SST_Monitoring");
+        var filterRegex = new RegExp("https:\/\/schckngs\.github\.io\/Pacific_SST_Monitoring_Site\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
