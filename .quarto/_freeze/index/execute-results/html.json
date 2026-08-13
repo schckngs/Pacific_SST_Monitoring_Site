@@ -1,0 +1,15 @@
+{
+  "hash": "f8e057194537d358265f9eb465312258",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Pacific SST Monitoring Site\"\n---\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n\n\n::: {.column width=\"35%\"}\n\n# Testing! \n\n![Image of Wright Passage and Gil Island, from [Wikipedia](https://commons.wikimedia.org/wiki/File:Wright_Passage_and_Gil_Island_(386749484).jpg) by \"Shawn from Airdrie\", license [CC BY SA 2.0](https://creativecommons.org/licenses/by/2.0).](images/Wright_Passage_and_Gil_Island_(386749484).jpg)\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

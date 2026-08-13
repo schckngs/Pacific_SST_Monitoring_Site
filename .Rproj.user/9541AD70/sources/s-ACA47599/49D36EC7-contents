@@ -1,0 +1,329 @@
+---
+title: "Sea surface temperature in the Northeast Pacific"
+title-block-banner: false
+date: today
+bibliography: references.bib
+csl: canadian-journal-of-fisheries-and-aquatic-sciences.csl
+citation: 
+  url: https://ios-osd-dpg.github.io/Pacific_SST_Monitoring_Site/
+author:
+  - Andrea Hilborn
+  - Charles Hannah
+  - Lu Guan
+format:
+  html: 
+    other-links:
+      - text: 2026 El Niño Tracker (D. Risaro)
+        href: https://danielarisaro.ar/portfolio/enso-tracker/
+      - text: BC Drought Information Portal
+        href: https://droughtportal.gov.bc.ca/
+      - text: BC Snow Conditions
+        href: https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/river-forecast-centre/snow-survey-water-supply-bulletin/snow-conditions-commentary
+      - text: BC Streamflow Conditions
+        href: https://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html
+      - text: California Current MHW Tracker
+        href: https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker
+      - text: CIOOS Pacific MHW Monitor
+        href: https://cioospacific.ca/applied-data/marine-heat-monitor/
+      - text: Climate Reanalyzer SST
+        href: https://climatereanalyzer.org/clim/sst_daily/?dm_id=world2
+      - text: Copernicus Climate Pulse
+        href: https://pulse.climate.copernicus.eu/
+      - text: El Niño Index Dashboard
+        href: https://psl.noaa.gov/enso/dashboard.html
+      - text: Marine Heatwaves International Working Group
+        href: https://www.marineheatwaves.org/
+      - text: NOAA SST and Coral Bleaching Daily Products
+        href: https://www.ospo.noaa.gov/products/ocean/cb/sst5km/?product=ssta
+      - text: NOAA PSL MHW Forecast
+        href: https://psl.noaa.gov/marine-heatwaves/#report
+      - text: NOAA PSL SST Maps
+        href: https://psl.noaa.gov/map/clim/sst.shtml
+---
+
+<!-- blue 1: #335075ff -->
+
+<!-- blue 2: #243850ff -->
+
+::: columns
+::: {.column width="63%"}
+**Sea surface temperature (SST)** and its anomalies, or deviations above or below the "normal" conditions, are important to monitor over time. Variations that happen for an extended period of time, or are large in magnitude, may have significant impacts on the wider ecosystem. **Marine heatwaves (MHWs)** are a topic of growing concern, as large-scale heat events can negatively affect the life cycles, food availability, and habitat of so many species that live in our oceans. MHWs are typically defined as temperatures above the upper 90th percentile of what is typical for a given area [see @Hobday2016 and @Hobday2018 for further reading about common definitions]. On the other hand, **Marine cold spells (MCSs)**, are periods where temperatures are cooler than the lower 10th percentile typically observed in a location, and may also have both positive and negative effects on ecosystems [see @Schlegel2021 for more].
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="35%"}
+
+::: {}
+![](./figures/Nereocystis_luetkeana.jpg)
+
+*Bull kelp,* Nereocystis luetkeana*, a species negatively impacted by marine heatwaves. Image from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nereocystis_luetkeana.jpg), license [CC BY SA 2.0](https://creativecommons.org/licenses/by/2.0).*
+:::
+
+:::
+:::
+
+### How to use this page
+
+This page updates weekly with maps and figures from a number of different data sources, for monitoring SSTs and MHWs in the Northeast Pacific and Canadian Exclusive Economic Zone (EEZ) off of the province of British Columbia (BC). The goal is to provide recent maps and information to monitor developing surface ocean temperature events in the NEP.
+
+A summary of the methods used here and further details can be found in @Hilborn2025. The OISST and buoy data can also now be found in the [`pacea` R package](https://github.com/pbs-assess/pacea) [@Edwards2024].
+
+::: callout-note
+**These figures are provisional and correctness is not guaranteed**. These figures update weekly on Mondays using the most recent week of data. The climatologies, or long-term baselines used to compare satellite and buoy data to, are calculated from the [Canadian Climate Normals](https://climate.weather.gc.ca/climate_normals/) period of **1991--2020**.
+:::
+
+## Northeast Pacific SST and SST anomaly
+
+-   **Dataset:** [NOAA Optimal Interpolation gap-filled SST (OISST)](https://www.ncei.noaa.gov/products/optimum-interpolation-sst)
+-   **Data access:** Coastwatch ERDDAP [Near-realtime](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg_LonPM180.graph) and [Science-quality](https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg_LonPM180.graph) records
+-   **Spatial resolution:** 0.25° (\~25 km)
+-   **Climatology period:** 1991--2020
+-   **Region boundaries:** 30-65°N and 120-160°W
+
+### Latest week of data
+
+::: {layout-ncol="2"}
+![](./figures/SST_OI_7-day_rollingavg.png)
+
+![](./figures/SST_OI_7-day_rollingavg_anom.png)
+:::
+
+*5-degree intervals are marked as lines on the SST plot (**left**). On the anomaly plots (**right**) the lines outline areas of SSTs above 1.29 and 2.33 standard deviations compared to normal (i.e., the upper **90th** and **99th percentiles** relative to the climatological baseline). The BC EEZ is indicated with a dashed line. Points indicate selected stations along [Line-P](https://www.dfo-mpo.gc.ca/science/data-donnees/line-p/index-eng.html).*
+
+## Marine heatwave conditions in the Northeast Pacific and BC Exclusive Economic Zone
+
+The 2025 MHW spatial coverage of the NEP and BC EEZ sub-regions are shown below. The coverage from the previous year, 2024, is shown for comparison as a shaded grey area. The current percent area of each region in MHW status in the surface waters is written in the upper left corner. The same information is shown below for the NEP ([**black**]{style="color:black;"}), BC EEZ ([red]{style="color:red;"}) and three sub-regions:
+
+::: columns
+::: {.column width="50%"}
+-   Offshore Pacific Bioregion (OPB, [light blue]{style="color:#00d4db;"})
+-   Northern Shelf Bioregion (NSB, [dark blue]{style="color:#2675fc;"})
+:::
+
+::: {.column width="50%"}
+-   Southern Shelf Bioregion (SSB, [yellow]{style="color:#b79f00;"})
+:::
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Click here to view region map
+
+![](./figures/BC_MHW_OIRegions.png){fig-align="center" width="40%"}
+:::
+
+<img src="./figures/MHW_EEZ_perc_coverage_2026_regions.png" width="90%"/>
+
+*Download the data from this figure [here](https://github.com/IOS-OSD-DPG/Pacific_SST_Monitoring/blob/main/data/MHW_EEZ_values_2025-2026.csv).*
+
+## How does SST in the Northeast Pacific compare between years?
+
+The average SST and SST anomaly of the NEP is shown below, beginning in 1981. A few years have been selected for further emphasis. 2014 and 2015, years of "the Blob", are shown in [pink]{style="color:magenta;"} and [purple]{style="color:purple;"}. 2019, another anomalously warm year occurring during an El Nino, is shown in [cyan]{style="color:cyan;"}. The most recent three years, which have also been some of the warmest on record, are shown as [orange]{style="color:orange;"} (2023), [brown]{style="color:brown;"} (2024), and [red]{style="color:red;"} (2025). 2026 progress is shown in [**black**]{style="color:black;"}.
+
+![](./figures/NEP_progress.png){fig-align="center" width="80%"}
+
+### Rankings of 10 warmest years since 1981
+
+::: {.column width="45%"}
+When averaging the SST and SST anomaly for each year for the entire NEP (right), the years of "the Blob" were the warmest overall since 1981. **2025** ranked at number 5, behind 2019 and 2020.
+
+Below are top 10 rankings of SST when averaged for the entire NEP by month. Click on the tab to alternate between the averaged SST and SST anomaly.
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="50%"}
+![](figures/Ranked_SST_years.png)
+:::
+
+::: panel-tabset
+#### Mean monthly SST
+
+*The point indicates the mean of the SST by month, with the bars indicating the monthly standard deviation bounds. The years are indicated on the left, with warmest indicated with a rank of "1."* ![](./figures/Ranked_SST_months.png){fig-align="center" width="80%"} <!-- <img src="./figures/Ranked_SST_months.png" width="600"/> -->
+
+#### Mean monthly SST anomaly
+
+*The point indicates the mean SST **anomaly** by month, with the bars indicating the monthly mean anomaly standard deviation bounds. The years are indicated on the left, with highest mean anomaly indicated with a rank of "1."* ![](./figures/Ranked_SST_Anom_months.png){fig-align="center" width="80%"} <!-- <img src="./figures/Ranked_SST_Anom_months.png" width="600"/> -->
+:::
+
+### Annual mean and anomaly SST trend
+
+Below are plots of the SST and SST anomaly, averaged by year and beginning in 1982, for the NEP. The trendline was calculated using a linear least-squares model.
+
+::: panel-tabset
+#### Mean annual SST
+
+*The points indicate the mean SST by year, with 2026 indicated in [orange]{style="color:orange;"}.*
+
+![](./figures/NEP_annual_mean_trend.png){fig-align="center"}
+
+#### Mean annual SST anomaly
+
+*The points indicate the mean SST anomaly by year, with 2026 indicated in [orange]{style="color:orange;"}.*
+
+![](./figures/NEP_annual_mean_anomaly_trend.png){fig-align="center"}
+:::
+
+## ECCC Buoy data
+
+::: {.callout-note collapse="true" icon="false"}
+## Click here to view map of buoys
+
+![](./figures/Daily_mean_buoy_map.png){fig-align="center" width="80%"}
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Click here to view 1991-2020 buoy surface temperature climatologies
+
+![](./figures/Daily_mean_SSTP_clims.png){fig-align="center" width="75%"}
+:::
+
+-   **Dataset:** Surface temperature observations from Canadian Pacific buoys maintained by [Environment and Climate Change Canada (ECCC)](https://www.canada.ca/en/environment-climate-change/services/general-marine-weather-information/observations/buoy.html) and [Fisheries and Oceans Canada (DFO)](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)
+-   **Data access:** CIOOS Pacific ERDDAP [DFO_MEDS_BUOYS](https://data.cioospacific.ca/erddap/info/DFO_MEDS_BUOYS/index.html) and [ECCC_MSC_BUOYS](https://data.cioospacific.ca/erddap/info/ECCC_MSC_BUOYS/index.html) records. The DFO_MEDS_BUOYS record has a detailed quality control layer outlined in @Kellogg2021 which **ceased in December, 2023**
+-   **Climatology period:** 1991--2020
+
+### Latest week of data
+
+![*Coloured circles indicate the weekly SST and SST anomaly at buoy locations (see collapsed location map above), averaged to correspond to the OISST maps above. The BC EEZ is indicated with a dashed line, with grey outlines indicating Marine Protected Areas, other protected areas of interest, and BC Bioregion boundaries.*](./figures/Buoy_week_SST_7-day_rollingavg.png)
+
+
+### 2026 buoy SST and SST anomalies
+
+The white lines outlined in black are daily mean observations from 2026. The buoy climatological mean (grey line) is plotted with 10th and 90th percentiles (grey shading). The climatology spans 1991--2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`.
+
+There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019. **C46147 South Moresby and C46183 North Hecate Strait are currently offline.**
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46184.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46205.png)
+:::
+
+<!-- <p align="center"> -->
+
+<!-- <img src="./figures/Daily_mean_SSTP_2026_C46184.png" width="43%"/>         <img src="./figures/Daily_mean_SSTP_2026_C46205.png" width="43%"/> -->
+
+<!-- </p> -->
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46145.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46181.png)
+:::
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46185.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46204.png)
+:::
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46208.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46207.png)
+:::
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46004.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46036.png)
+:::
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46132.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46206.png)
+:::
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46131.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46146.png)
+:::
+
+::: {.callout-note collapse="true" icon="false"}
+## Click here to view buoy details
+
+The start dates listed here may not correspond with other sources (e.g. the [ECCC website](https://www.pac.dfo-mpo.gc.ca/science/oceans/data-donnees/buoydata-donneebouee/index-eng.html)) but represent the data record available at the sources listed above, as of December 2023.
+
+An up-to-date buoy status report can be viewed here: <https://collaboration.cmc.ec.gc.ca/cmc/wbs/bplatstat.html>
+
+| Stn ID                                                                                                                                      | Start Date | Longitude | Latitude |
+|---------------------------|---------------|---------------|---------------|
+| [C46004 Middle NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46004)           | 1988-08-04 | -136.10   | 50.93    |
+| [C46036 South NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46036)            | 1987-09-22 | -133.94   | 48.35    |
+| [C46131 Sentry Shoal](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46131)           | 1992-10-20 | -124.99   | 49.91    |
+| [C46132 South Brooks](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46132)           | 1994-05-05 | -127.93   | 49.74    |
+| [C46145 Central Dixon Entrance](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46145) | 1991-04-16 | -132.42   | 54.38    |
+| [C46146 Halibut Bank](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46146)           | 1992-03-13 | -123.73   | 49.34    |
+| [C46147 South Moresby](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46147)          | 1993-06-17 | -131.23   | 51.83    |
+| [C46181 Nanakwa Shoal](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46181)          | 1988-11-22 | -128.84   | 53.82    |
+| [C46183 North Hecate Strait](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46183)    | 1991-05-15 | -131.14   | 53.57    |
+| [C46184 North NOMAD](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46184)            | 1987-09-20 | -138.85   | 53.92    |
+| [C46185 South Hecate Strait](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46185)    | 1991-09-12 | -129.79   | 52.42    |
+| [C46204 West Sea Otter](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46204)         | 1989-09-07 | -128.77   | 51.38    |
+| [C46205 West Dixon Entrance](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46205)    | 1988-11-22 | -134.32   | 54.19    |
+| [C46206 La Perouse Bank](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46206)        | 1988-11-22 | -126.00   | 48.83    |
+| [C46207 East Dellwood](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46207)          | 1989-10-18 | -129.91   | 50.88    |
+| [C46208 West Moresby](https://www.meds-sdmm.dfo-mpo.gc.ca/isdm-gdsi/waves-vagues/data-donnees/data-donnees-eng.asp?medsid=C46208)           | 1990-07-12 | -132.69   | 52.51    |
+| C46303 South Georgia Strait\*                                                                                                               | 2019-10-01 | -123.43   | 49.025   |
+| C46304 Entrance English Bay\*                                                                                                               | 2019-10-01 | -123.357  | 49.302   |
+
+\* *Note that these buoys do not have MEDS webpages with data*
+:::
+
+<!-- ## Other data sources and links of interest -->
+
+<!-- ### El Niño -->
+
+<!-- -   [NOAA El Niño Index Dashboard](https://psl.noaa.gov/enso/dashboard.html) -->
+
+<!-- -   [NOAA ENSO Blog](https://www.climate.gov/news-features/blogs/enso) -->
+
+<!-- ### Hydrology, drought and climate -->
+
+<!-- -   [BC River Forecast Centre Map of 7-Day Average Streamflow](http://bcrfc.env.gov.bc.ca/lowflow/map_7dayflow.html) -->
+
+<!-- -   [BC Drought Information Portal](https://droughtportal.gov.bc.ca/) -->
+
+<!-- -   [BC Snow Conditions Summary](https://www2.gov.bc.ca/gov/content/environment/air-land-water/water/drought-flooding-dikes-dams/river-forecast-centre/snow-survey-water-supply-bulletin/snow-conditions-commentary) -->
+
+<!-- ### SST and Marine Heatwaves -->
+
+<!-- -   [California Current Marine Heatwave Tracker](https://www.integratedecosystemassessment.noaa.gov/regions/california-current/california-current-marine-heatwave-tracker-blobtracker) -->
+
+<!-- -   [CIOOS Pacific Marine Heatwave Monitor](https://cioospacific.ca/applied-data/marine-heat-monitor/) -->
+
+<!-- -   [Climate Reanalyzer Daily Global Sea Surface Temperature](https://climatereanalyzer.org/clim/sst_daily/) -->
+
+<!-- -   [Copernicus Climate Indicators](https://climate.copernicus.eu/climate-indicators) -->
+
+<!-- -   [Copernicus Climate Pulse](https://pulse.climate.copernicus.eu/) -->
+
+<!-- -   [Global daily SST, 7-day trend and anomaly (NOAA CoralReefWatch)](https://www.ospo.noaa.gov/Products/ocean/cb/sst5km/) -->
+
+<!-- -   [Marine Heatwaves International Working Group](http://www.marineheatwaves.org/) -->
+
+<!-- -   [Multi-Scale Ultra-High resolution SST Anomaly, Daily](https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.trim=0&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff) \***click to view latest image** <img src="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.png?sstAnom%5B(last)%5D%5B(20.0):(63.0)%5D%5B(-179.99):(-110.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CsstAnom&amp;.trim=0&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" alt="Multi-Scale Ultra-High Resolution SST Anomaly, Daily"/> -->
+
+<!-- -   [NOAA Marine Heatwave Forecast Monthly Report](https://psl.noaa.gov/marine-heatwaves/#report) -->
+
+<!-- -   [NOAA CoastWatch Data Viewer](https://coastwatch.noaa.gov/cw_html/cwViewer.html) and [CoastWatch commonly used SST data sources](https://coastwatch.pfeg.noaa.gov/data.html) -->
+
+<!-- -   [NOAA Coral Reef Watch: MHW Watch](https://coralreefwatch.noaa.gov/product/marine_heatwave/) -->
+
+<!-- -   [NOAA Physical Sciences Lab Map Room: SST](https://psl.noaa.gov/map/clim/sst.shtml) -->
+
+<!-- -   [Pacific Islands Ocean Observing System](https://www.pacioos.hawaii.edu/voyager/): Near-Real Time data viewer including Coral Reef Watch SST and SST anomaly -->
+
+<!-- ## Old references -->
+
+<!-- -   California Current Marine Heatwave Tracker: https://oceanview.pfeg.noaa.gov/projects/mhw/latest -->
+
+<!-- -   CoastWatch ERDDAP Server: https://coastwatch.pfeg.noaa.gov/erddap/index.html -->
+
+<!-- -   CIOOS Pacific ERDDAP Server: https://data.cioospacific.ca/erddap/index.html -->
+
+<!-- -   Galbraith, P.S., Larouche, P. & Caverhill, C. (2021): A Sea-Surface Temperature Homogenization Blend for the Northwest Atlantic, Canadian Journal of Remote Sensing, [doi:10.1080/07038992.2021.1924645](https://www.tandfonline.com/doi/full/10.1080/07038992.2021.1924645) -->
