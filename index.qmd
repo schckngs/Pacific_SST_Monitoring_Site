@@ -148,23 +148,13 @@ Below are top 10 rankings of SST when averaged for the entire NEP by month. Clic
 *The point indicates the mean SST **anomaly** by month, with the bars indicating the monthly mean anomaly standard deviation bounds. The years are indicated on the left, with highest mean anomaly indicated with a rank of "1."* ![](./figures/Ranked_SST_Anom_months.png){fig-align="center" width="80%"} <!-- <img src="./figures/Ranked_SST_Anom_months.png" width="600"/> -->
 :::
 
-### Annual mean and anomaly SST trend
+### Annual mean anomaly SST trend
 
-Below are plots of the SST and SST anomaly, averaged by year and beginning in 1982, for the NEP. The trendline was calculated using a linear least-squares model.
-
-::: panel-tabset
-#### Mean annual SST
-
-*The points indicate the mean SST by year, with 2026 indicated in [orange]{style="color:orange;"}.*
-
-![](./figures/NEP_annual_mean_trend.png){fig-align="center"}
-
-#### Mean annual SST anomaly
+The mean annual SST anomaly of the NEP, beginning in 1982, is below. The trendline was calculated using a linear least-squares model.
 
 *The points indicate the mean SST anomaly by year, with 2026 indicated in [orange]{style="color:orange;"}.*
 
 ![](./figures/NEP_annual_mean_anomaly_trend.png){fig-align="center"}
-:::
 
 ## ECCC Buoy data
 
@@ -193,7 +183,7 @@ Below are plots of the SST and SST anomaly, averaged by year and beginning in 19
 
 The white lines outlined in black are daily mean observations from 2026. The buoy climatological mean (grey line) is plotted with 10th and 90th percentiles (grey shading). The climatology spans 1991--2020, though some buoys began collecting data later: `C46146 Halibut Bank`, `C46131 Sentry Shoal`, `C46147 South Moresby` and `C46132 South Brooks`.
 
-There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019. **C46147 South Moresby and C46183 North Hecate Strait are currently offline.**
+*There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entrance English Bay` as they were installed in 2019.*
 
 ::: {layout-ncol="2"}
 ![](./figures/Daily_mean_SSTP_2026_C46184.png)
@@ -214,13 +204,20 @@ There are no climatologies for `C46303 South Georgia Strait` and `C46304 Entranc
 :::
 
 ::: {layout-ncol="2"}
-![](./figures/Daily_mean_SSTP_2026_C46185.png)
+![](./figures/Daily_mean_SSTP_2026_C46183.png)
 
-![](./figures/Daily_mean_SSTP_2026_C46204.png)
+![](./figures/Daily_mean_SSTP_2026_C46185.png)
 :::
 
 ::: {layout-ncol="2"}
 ![](./figures/Daily_mean_SSTP_2026_C46208.png)
+
+![](./figures/Daily_mean_SSTP_2026_C46147.png)
+
+:::
+
+::: {layout-ncol="2"}
+![](./figures/Daily_mean_SSTP_2026_C46204.png)
 
 ![](./figures/Daily_mean_SSTP_2026_C46207.png)
 :::

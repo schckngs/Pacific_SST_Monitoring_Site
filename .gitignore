@@ -8,3 +8,12 @@
 .Rdata
 .httr-oauth
 .DS_Store
+**/*.quarto_ipynb
+.Rproj.user
+.Rproj.user
+.Rproj.user
+.Rproj.user
+.Rproj.user
+.Rproj.user
+.Rproj.user
+.Rproj.user
